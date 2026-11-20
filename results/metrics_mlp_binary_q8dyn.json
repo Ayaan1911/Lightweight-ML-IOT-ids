@@ -1,0 +1,11 @@
+{
+  "model_id": "mlp_binary_q8dyn",
+  "task": "binary",
+  "macro_f1": 0.7803702056451118,
+  "accuracy": 0.9792424322282541,
+  "precision": 0.8323271757089943,
+  "recall": 0.7431939081667647,
+  "fpr": 0.5068879148403256,
+  "quant_mode": "dynamic-range",
+  "val_macro_f1": 0.7817283690062801
+}

@@ -1,0 +1,38 @@
+{
+  "model_id": "xgb_multi_ga",
+  "cols": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    7,
+    11,
+    12,
+    15,
+    16,
+    17,
+    18,
+    20,
+    23,
+    24,
+    25,
+    26,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36
+  ],
+  "hp": {
+    "n_estimators": 130,
+    "max_depth": 10,
+    "learning_rate": 0.0951,
+    "subsample": 0.7697,
+    "colsample_bytree": 1.0,
+    "min_child_weight": 3
+  },
+  "seed": 42
+}

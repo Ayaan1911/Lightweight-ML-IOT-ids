@@ -1,0 +1,36 @@
+{
+  "model_id": "dt_binary_pso_s43",
+  "cols": [
+    1,
+    2,
+    4,
+    7,
+    8,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "hp": {
+    "max_depth": 12,
+    "min_samples_split": 45,
+    "min_samples_leaf": 8,
+    "criterion": "entropy",
+    "class_weight": null
+  },
+  "seed": 43
+}

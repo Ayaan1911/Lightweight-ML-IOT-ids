@@ -1,0 +1,33 @@
+{
+  "model_id": "xgb_binary_ga_s43",
+  "cols": [
+    0,
+    1,
+    2,
+    4,
+    7,
+    11,
+    12,
+    16,
+    17,
+    20,
+    21,
+    23,
+    24,
+    26,
+    29,
+    30,
+    31,
+    32,
+    36
+  ],
+  "hp": {
+    "n_estimators": 200,
+    "max_depth": 8,
+    "learning_rate": 0.06465,
+    "subsample": 0.84,
+    "colsample_bytree": 0.8042,
+    "min_child_weight": 8
+  },
+  "seed": 43
+}

@@ -1,0 +1,38 @@
+{
+  "model_id": "rf_multi_ga",
+  "cols": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    34,
+    36,
+    37,
+    38
+  ],
+  "hp": {
+    "n_estimators": 135,
+    "max_depth": 24,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "class_weight": "balanced_subsample"
+  },
+  "seed": 42
+}

@@ -1,0 +1,51 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 445B 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 ...
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 1.8s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 155B done
+#5 DONE 0.0s
+
+#6 [1/5] FROM docker.io/library/python:3.11-slim@sha256:07d4824036af339fa1b6ef769cc99d9c10a141769538b52b3b597c84f7a7b535
+#6 resolve docker.io/library/python:3.11-slim@sha256:07d4824036af339fa1b6ef769cc99d9c10a141769538b52b3b597c84f7a7b535 0.0s done
+#6 DONE 0.1s
+
+#7 [2/5] RUN pip install --no-cache-dir numpy==2.4.6 scikit-learn==1.9.1 xgboost==3.2.0 psutil joblib tensorflow-cpu==2.21.0 keras==3.15.1
+#7 CACHED
+
+#8 [3/5] WORKDIR /app
+#8 CACHED
+
+#9 [4/5] COPY bench.py ./
+#9 CACHED
+
+#10 [5/5] COPY src/__init__.py src/common.py src/predictors.py ./src/
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers done
+#11 exporting manifest sha256:b0cd92c558bde948ba56d2214488dc66396d826b2b9254828a12397ac208bf42 done
+#11 exporting config sha256:384181ebee4c802b9fbd02f88428dd9381efadb25ef1fb8db9c13974759771f6 done
+#11 exporting attestation manifest sha256:86c95f818411f24ced618bd734c221319fb9ec09ab72bfe74df2e5eed631906c 0.0s done
+#11 exporting manifest list sha256:ac65ee7bbe59bdf55f64abc12239cb2f2eabcc65f9fac4f4848ad4bc4ff0d527 0.0s done
+#11 naming to docker.io/library/iot-bench:latest
+#11 naming to docker.io/library/iot-bench:latest done
+#11 unpacking to docker.io/library/iot-bench:latest
+#11 unpacking to docker.io/library/iot-bench:latest 25.3s done
+#11 DONE 25.4s

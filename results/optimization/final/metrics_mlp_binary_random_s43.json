@@ -1,0 +1,15 @@
+{
+  "model_id": "mlp_binary_random_s43",
+  "task": "binary",
+  "macro_f1": 0.7547271534025747,
+  "accuracy": 0.9782234403274829,
+  "precision": 0.8321545182911064,
+  "recall": 0.7078560890522265,
+  "fpr": 0.5785848465873513,
+  "optimizer": "random",
+  "model": "mlp",
+  "seed": 43,
+  "n_features": 23,
+  "train_s": 54.26563262939453,
+  "val_macro_f1_full": 0.7542022631537659
+}

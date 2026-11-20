@@ -1,0 +1,35 @@
+{
+  "model_id": "rf_multi_pso",
+  "cols": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    11,
+    12,
+    15,
+    16,
+    18,
+    19,
+    20,
+    23,
+    25,
+    27,
+    28,
+    29,
+    31,
+    32,
+    34,
+    35,
+    37
+  ],
+  "hp": {
+    "n_estimators": 140,
+    "max_depth": 30,
+    "min_samples_leaf": 2,
+    "max_features": 0.5,
+    "class_weight": "balanced_subsample"
+  },
+  "seed": 42
+}

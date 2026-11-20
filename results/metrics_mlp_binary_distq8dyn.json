@@ -1,0 +1,11 @@
+{
+  "model_id": "mlp_binary_distq8dyn",
+  "task": "binary",
+  "macro_f1": 0.7814030218055947,
+  "accuracy": 0.9790843127953759,
+  "precision": 0.8279306715761672,
+  "recall": 0.7470652037571712,
+  "fpr": 0.49874765184721354,
+  "quant_mode": "dynamic-range",
+  "val_macro_f1": 0.7795488008857803
+}

@@ -1,0 +1,15 @@
+{
+  "model_id": "rf_binary_ga_s44",
+  "task": "binary",
+  "macro_f1": 0.8084586805776159,
+  "accuracy": 0.9730406366942497,
+  "precision": 0.7534762395278338,
+  "recall": 0.8993251939230169,
+  "fpr": 0.17877269881026925,
+  "optimizer": "ga",
+  "model": "rf",
+  "seed": 44,
+  "n_features": 20,
+  "train_s": 19.17275309562683,
+  "val_macro_f1_full": 0.8047656140103414
+}

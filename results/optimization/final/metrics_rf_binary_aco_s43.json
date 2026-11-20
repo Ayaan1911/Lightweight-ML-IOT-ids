@@ -1,0 +1,15 @@
+{
+  "model_id": "rf_binary_aco_s43",
+  "task": "binary",
+  "macro_f1": 0.8114806363849699,
+  "accuracy": 0.9742528856796501,
+  "precision": 0.760624278080744,
+  "recall": 0.8909793688760221,
+  "fpr": 0.19724483406386975,
+  "optimizer": "aco",
+  "model": "rf",
+  "seed": 43,
+  "n_features": 18,
+  "train_s": 13.57599687576294,
+  "val_macro_f1_full": 0.8084608436720164
+}

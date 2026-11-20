@@ -1,0 +1,35 @@
+{
+  "model_id": "rf_binary_random_s44",
+  "cols": [
+    0,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    11,
+    12,
+    16,
+    18,
+    22,
+    23,
+    24,
+    25,
+    26,
+    28,
+    31,
+    32,
+    34,
+    35,
+    36
+  ],
+  "hp": {
+    "n_estimators": 122,
+    "max_depth": 28,
+    "min_samples_leaf": 4,
+    "max_features": "log2",
+    "class_weight": "balanced_subsample"
+  },
+  "seed": 44
+}

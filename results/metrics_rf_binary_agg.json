@@ -1,0 +1,10 @@
+{
+  "model_id": "rf_binary_agg",
+  "task": "binary",
+  "macro_f1": 0.7884456152087875,
+  "accuracy": 0.9804019747360284,
+  "precision": 0.8518779509244437,
+  "recall": 0.7453106610975258,
+  "fpr": 0.5037570444583594,
+  "n_features": 30
+}

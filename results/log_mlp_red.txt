@@ -1,0 +1,252 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794318269.998212    2856 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794318273.860147    2856 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794318277.472600    2856 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+mlp_binary_prune50 {'sparsity': 0.5, 'size_raw_kb': 182.44921875, 'size_gzip_kb': 105.927734375, 'val_macro_f1': 0.779163115459176}
+mlp_binary_prune70 {'sparsity': 0.7009987235069275, 'size_raw_kb': 182.451171875, 'size_gzip_kb': 83.9033203125, 'val_macro_f1': 0.7796925106380945}
+mlp_binary_prune90 {'sparsity': 0.8967890739440918, 'size_raw_kb': 182.451171875, 'size_gzip_kb': 49.1162109375, 'val_macro_f1': 0.7163845358187753}
+Saved artifact at 'D:\cache\tmp\tmpn2guk3r2'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 39), dtype=tf.float32, name='input_layer')
+Output Type:
+  TensorSpec(shape=(None, 1), dtype=tf.float32, name=None)
+Captures:
+  2553396442704: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553396443280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553396445008: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553396443472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553396443088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553396442896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\convert.py:846: UserWarning: Statistics for quantized inputs were expected, but not specified; continuing anyway.
+  warnings.warn(
+W0000 00:00:1794318369.439221    2856 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1794318369.439295    2856 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1794318369.439957    2856 reader.cc:83] Reading SavedModel from: D:\cache\tmp\tmpn2guk3r2
+I0000 00:00:1794318369.440673    2856 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1794318369.440714    2856 reader.cc:147] Reading SavedModel debug info (if present) from: D:\cache\tmp\tmpn2guk3r2
+I0000 00:00:1794318369.444681    2856 mlir_graph_optimization_pass.cc:437] MLIR V1 optimization pass is not enabled
+I0000 00:00:1794318369.445230    2856 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1794318369.472273    2856 loader.cc:220] Running initialization op on SavedModel bundle at path: D:\cache\tmp\tmpn2guk3r2
+I0000 00:00:1794318369.478185    2856 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 38542 microseconds.
+I0000 00:00:1794318369.517469    2856 dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+full-integer failed: IndexError('tuple index out of range')
+Saved artifact at 'D:\cache\tmp\tmpy0yj84wg'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 39), dtype=tf.float32, name='input_layer')
+Output Type:
+  TensorSpec(shape=(None, 1), dtype=tf.float32, name=None)
+Captures:
+  2553396442704: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553396443280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553396445008: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553396443472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553396443088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553396442896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+W0000 00:00:1794318369.965178    2856 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1794318369.965246    2856 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1794318369.965649    2856 reader.cc:83] Reading SavedModel from: D:\cache\tmp\tmpy0yj84wg
+I0000 00:00:1794318369.966282    2856 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1794318369.966317    2856 reader.cc:147] Reading SavedModel debug info (if present) from: D:\cache\tmp\tmpy0yj84wg
+I0000 00:00:1794318369.969704    2856 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1794318369.989823    2856 loader.cc:220] Running initialization op on SavedModel bundle at path: D:\cache\tmp\tmpy0yj84wg
+I0000 00:00:1794318369.995756    2856 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 30114 microseconds.
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+mlp_binary_q8 {'quant_mode': 'dynamic-range', 'val_macro_f1': 0.7817283690062801}
+mlp_binary_ctrl {'student': '(32, 16)', 'val_macro_f1': 0.783749595341487}
+mlp_binary_dist {'student': '(32, 16)', 'T': 2, 'alpha': 0.5, 'val_macro_f1': 0.7803569981884231}
+Saved artifact at 'D:\cache\tmp\tmppni3jtdo'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 39), dtype=tf.float32, name='input_layer_6')
+Output Type:
+  TensorSpec(shape=(None, 1), dtype=tf.float32, name=None)
+Captures:
+  2553472340944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472338640: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472342672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472342288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472341136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472346320: TensorSpec(shape=(), dtype=tf.resource, name=None)
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\convert.py:846: UserWarning: Statistics for quantized inputs were expected, but not specified; continuing anyway.
+  warnings.warn(
+W0000 00:00:1794319174.556087    2856 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1794319174.556322    2856 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1794319174.557281    2856 reader.cc:83] Reading SavedModel from: D:\cache\tmp\tmppni3jtdo
+I0000 00:00:1794319174.558971    2856 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1794319174.559067    2856 reader.cc:147] Reading SavedModel debug info (if present) from: D:\cache\tmp\tmppni3jtdo
+I0000 00:00:1794319174.564401    2856 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1794319174.602866    2856 loader.cc:220] Running initialization op on SavedModel bundle at path: D:\cache\tmp\tmppni3jtdo
+I0000 00:00:1794319174.613989    2856 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 56726 microseconds.
+full-integer failed: IndexError('tuple index out of range')
+Saved artifact at 'D:\cache\tmp\tmp8ui7t54s'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 39), dtype=tf.float32, name='input_layer_6')
+Output Type:
+  TensorSpec(shape=(None, 1), dtype=tf.float32, name=None)
+Captures:
+  2553472340944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472338640: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472342672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472342288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472341136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472346320: TensorSpec(shape=(), dtype=tf.resource, name=None)
+W0000 00:00:1794319175.157046    2856 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1794319175.157196    2856 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1794319175.158303    2856 reader.cc:83] Reading SavedModel from: D:\cache\tmp\tmp8ui7t54s
+I0000 00:00:1794319175.159534    2856 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1794319175.159613    2856 reader.cc:147] Reading SavedModel debug info (if present) from: D:\cache\tmp\tmp8ui7t54s
+I0000 00:00:1794319175.165459    2856 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1794319175.203501    2856 loader.cc:220] Running initialization op on SavedModel bundle at path: D:\cache\tmp\tmp8ui7t54s
+I0000 00:00:1794319175.214287    2856 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 55999 microseconds.
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+mlp_binary_distq8 {'quant_mode': 'dynamic-range', 'val_macro_f1': 0.7795488008857803}
+mlp_multi_prune50 {'sparsity': 0.5, 'size_raw_kb': 187.8017578125, 'size_gzip_kb': 133.8974609375, 'val_macro_f1': 0.7072886790354134}
+mlp_multi_prune70 {'sparsity': 0.6996966004371643, 'size_raw_kb': 187.8017578125, 'size_gzip_kb': 121.48828125, 'val_macro_f1': 0.7001504251150208}
+mlp_multi_prune90 {'sparsity': 0.8993932604789734, 'size_raw_kb': 187.8017578125, 'size_gzip_kb': 87.123046875, 'val_macro_f1': 0.6470434194842503}
+Saved artifact at 'D:\cache\tmp\tmpturi2g8r'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 39), dtype=tf.float32, name='input_layer_2')
+Output Type:
+  TensorSpec(shape=(None, 8), dtype=tf.float32, name=None)
+Captures:
+  2553472348432: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472351120: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472338448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472351696: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472344784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472342864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\convert.py:846: UserWarning: Statistics for quantized inputs were expected, but not specified; continuing anyway.
+  warnings.warn(
+W0000 00:00:1794319363.296031    2856 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1794319363.296091    2856 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1794319363.296489    2856 reader.cc:83] Reading SavedModel from: D:\cache\tmp\tmpturi2g8r
+I0000 00:00:1794319363.297120    2856 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1794319363.297155    2856 reader.cc:147] Reading SavedModel debug info (if present) from: D:\cache\tmp\tmpturi2g8r
+I0000 00:00:1794319363.300305    2856 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1794319363.320727    2856 loader.cc:220] Running initialization op on SavedModel bundle at path: D:\cache\tmp\tmpturi2g8r
+I0000 00:00:1794319363.326680    2856 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 30200 microseconds.
+full-integer failed: IndexError('tuple index out of range')
+Saved artifact at 'D:\cache\tmp\tmpb9edmdbt'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 39), dtype=tf.float32, name='input_layer_2')
+Output Type:
+  TensorSpec(shape=(None, 8), dtype=tf.float32, name=None)
+Captures:
+  2553472348432: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472351120: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472338448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472351696: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472344784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553472342864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+W0000 00:00:1794319363.640757    2856 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1794319363.640822    2856 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1794319363.641200    2856 reader.cc:83] Reading SavedModel from: D:\cache\tmp\tmpb9edmdbt
+I0000 00:00:1794319363.641866    2856 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1794319363.641903    2856 reader.cc:147] Reading SavedModel debug info (if present) from: D:\cache\tmp\tmpb9edmdbt
+I0000 00:00:1794319363.644860    2856 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1794319363.665076    2856 loader.cc:220] Running initialization op on SavedModel bundle at path: D:\cache\tmp\tmpb9edmdbt
+I0000 00:00:1794319363.671937    2856 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 30746 microseconds.
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+mlp_multi_q8 {'quant_mode': 'dynamic-range', 'val_macro_f1': 0.6989608535883368}
+mlp_multi_ctrl {'student': '(32, 16)', 'val_macro_f1': 0.6877419482456902}
+mlp_multi_dist {'student': '(32, 16)', 'T': 2, 'alpha': 0.5, 'val_macro_f1': 0.6844860152593581}
+Saved artifact at 'D:\cache\tmp\tmpumcx4e32'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 39), dtype=tf.float32, name='input_layer_13')
+Output Type:
+  TensorSpec(shape=(None, 8), dtype=tf.float32, name=None)
+Captures:
+  2553531040976: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553531048656: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553531046736: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553531041360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553531054416: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553531046160: TensorSpec(shape=(), dtype=tf.resource, name=None)
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\convert.py:846: UserWarning: Statistics for quantized inputs were expected, but not specified; continuing anyway.
+  warnings.warn(
+W0000 00:00:1794319679.861573    2856 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1794319679.861652    2856 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1794319679.862073    2856 reader.cc:83] Reading SavedModel from: D:\cache\tmp\tmpumcx4e32
+I0000 00:00:1794319679.862673    2856 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1794319679.862709    2856 reader.cc:147] Reading SavedModel debug info (if present) from: D:\cache\tmp\tmpumcx4e32
+I0000 00:00:1794319679.865732    2856 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1794319679.885691    2856 loader.cc:220] Running initialization op on SavedModel bundle at path: D:\cache\tmp\tmpumcx4e32
+I0000 00:00:1794319679.891755    2856 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 29695 microseconds.
+full-integer failed: IndexError('tuple index out of range')
+Saved artifact at 'D:\cache\tmp\tmpmz4mtaml'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 39), dtype=tf.float32, name='input_layer_13')
+Output Type:
+  TensorSpec(shape=(None, 8), dtype=tf.float32, name=None)
+Captures:
+  2553531040976: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553531048656: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553531046736: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553531041360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553531054416: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2553531046160: TensorSpec(shape=(), dtype=tf.resource, name=None)
+W0000 00:00:1794319680.191111    2856 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1794319680.191176    2856 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1794319680.191553    2856 reader.cc:83] Reading SavedModel from: D:\cache\tmp\tmpmz4mtaml
+I0000 00:00:1794319680.192149    2856 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1794319680.192187    2856 reader.cc:147] Reading SavedModel debug info (if present) from: D:\cache\tmp\tmpmz4mtaml
+I0000 00:00:1794319680.195278    2856 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1794319680.215780    2856 loader.cc:220] Running initialization op on SavedModel bundle at path: D:\cache\tmp\tmpmz4mtaml
+I0000 00:00:1794319680.221687    2856 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 30142 microseconds.
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+D:\Projects\Research\.venv\Lib\site-packages\tensorflow\lite\python\interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+mlp_multi_distq8 {'quant_mode': 'dynamic-range', 'val_macro_f1': 0.6750084747590058}

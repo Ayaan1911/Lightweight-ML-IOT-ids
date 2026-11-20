@@ -1,0 +1,36 @@
+{
+  "val_benign_rows": 3194,
+  "train_attack_rows": 516334,
+  "train_benign_rows": 14905,
+  "val_benign_with_identical_train_attack_vector(round=None)": 0,
+  "  share(round=None)": 0.0,
+  "val_benign_with_identical_train_attack_vector(round=4)": 2,
+  "  share(round=4)": 0.0006261740763932373,
+  "val_benign_with_identical_train_attack_vector(round=2)": 2,
+  "  share(round=2)": 0.0006261740763932373,
+  "val_benign_with_identical_train_attack_vector(round=0)": 9,
+  "  share(round=0)": 0.002817783343769568,
+  "train_attack_share": 0.9719429484657565,
+  "nn": {
+    "val_benign": {
+      "n": 3194,
+      "median_dist_to_nearest_train_benign": 0.4560580253601074,
+      "median_dist_to_nearest_train_attack": 0.42618387937545776,
+      "share_nearest_attack_closer_than_nearest_benign": 0.46211646837820913,
+      "share_1NN_is_attack": 0.46211646837820913,
+      "mean_share_of_5NN_that_are_attack": 0.49755792110206637,
+      "share_all_5NN_attack": 0.14965560425798372,
+      "share_all_5NN_benign": 0.141202254226675
+    },
+    "val_attack(sample, same n)": {
+      "n": 3194,
+      "median_dist_to_nearest_train_benign": 4.451934576034546,
+      "median_dist_to_nearest_train_attack": 0.0017541493871249259,
+      "share_nearest_attack_closer_than_nearest_benign": 0.9912335629304947,
+      "share_1NN_is_attack": 0.9912335629304947,
+      "mean_share_of_5NN_that_are_attack": 0.9855979962429555,
+      "share_all_5NN_attack": 0.9561678146524734,
+      "share_all_5NN_benign": 0.0012523481527864746
+    }
+  }
+}

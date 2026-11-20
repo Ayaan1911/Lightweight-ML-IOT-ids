@@ -1,0 +1,13 @@
+{
+  "model_id": "mlp_binary_prune50",
+  "task": "binary",
+  "macro_f1": 0.7817355045210999,
+  "accuracy": 0.9797255749398268,
+  "precision": 0.8423383515243725,
+  "recall": 0.7402499381035946,
+  "fpr": 0.5134627426424546,
+  "sparsity": 0.5,
+  "size_raw_kb": 182.44921875,
+  "size_gzip_kb": 105.927734375,
+  "val_macro_f1": 0.779163115459176
+}

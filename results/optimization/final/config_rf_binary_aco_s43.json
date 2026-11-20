@@ -1,0 +1,31 @@
+{
+  "model_id": "rf_binary_aco_s43",
+  "cols": [
+    0,
+    2,
+    4,
+    5,
+    7,
+    11,
+    16,
+    17,
+    19,
+    22,
+    23,
+    24,
+    27,
+    28,
+    31,
+    32,
+    33,
+    36
+  ],
+  "hp": {
+    "n_estimators": 91,
+    "max_depth": 30,
+    "min_samples_leaf": 2,
+    "max_features": "log2",
+    "class_weight": "balanced_subsample"
+  },
+  "seed": 43
+}

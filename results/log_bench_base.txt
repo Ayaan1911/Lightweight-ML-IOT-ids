@@ -1,0 +1,8 @@
+dt_binary ok
+rf_binary ok
+xgb_binary ok
+mlp_binary ok
+dt_multi ok
+rf_multi ok
+xgb_multi ok
+mlp_multi ok

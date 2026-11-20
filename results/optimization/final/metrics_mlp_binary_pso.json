@@ -1,0 +1,15 @@
+{
+  "model_id": "mlp_binary_pso",
+  "task": "binary",
+  "macro_f1": 0.7813102241621124,
+  "accuracy": 0.9787065830390556,
+  "precision": 0.8202862100411561,
+  "recall": 0.7512795979645959,
+  "fpr": 0.48966812773951157,
+  "optimizer": "pso",
+  "model": "mlp",
+  "seed": 42,
+  "n_features": 19,
+  "train_s": 31.843134880065918,
+  "val_macro_f1_full": 0.7798039812780178
+}

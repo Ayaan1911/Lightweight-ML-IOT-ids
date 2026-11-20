@@ -1,0 +1,10 @@
+{
+  "model_id": "xgb_binary_agg",
+  "task": "binary",
+  "macro_f1": 0.7892328676882194,
+  "accuracy": 0.980217502064337,
+  "precision": 0.846194509629638,
+  "recall": 0.7491683996943312,
+  "fpr": 0.49561678146524735,
+  "n_features": 20
+}

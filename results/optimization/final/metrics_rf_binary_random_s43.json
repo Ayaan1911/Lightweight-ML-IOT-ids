@@ -1,0 +1,15 @@
+{
+  "model_id": "rf_binary_random_s43",
+  "task": "binary",
+  "macro_f1": 0.7925848553254249,
+  "accuracy": 0.9676118694987614,
+  "precision": 0.7278195130728977,
+  "recall": 0.9217685237655824,
+  "fpr": 0.12680025046963056,
+  "optimizer": "random",
+  "model": "rf",
+  "seed": 43,
+  "n_features": 22,
+  "train_s": 20.245131492614746,
+  "val_macro_f1_full": 0.7904979987241649
+}

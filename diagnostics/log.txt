@@ -1,0 +1,113 @@
+D:\Projects\Research\.venv\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, but DecisionTreeClassifier was fitted with feature names
+  warnings.warn(
+D:\Projects\Research\.venv\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794329705.086385   23772 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794329710.240097   23772 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794329711.436428   23772 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+                                  step     rows  benign   attack  benign_pct  benign_removed  attack_removed
+0                            0 sampled  1055885   21329  1034556        2.02               0               0
+1                 1 drop missing label  1055876   21329  1034547        2.02               0               9
+2                  2 drop NaN/inf rows  1055851   21329  1034522        2.02               0              25
+3  3 exact duplicates (features+label)   817122   21319   795803        2.61              10          238719
+4            4 conflicting task labels   765006   21293   743713        2.78              26           52090
+5   5 identical vectors, same category   758914   21293   737621        2.81               0            6092
+cat
+DDoS + DoS                                             23959
+Spoofing + Web-based                                      33
+Recon + Spoofing                                          23
+Recon + Spoofing + Web-based                              12
+Benign + Spoofing                                         11
+Benign + Spoofing + Web-based                              6
+Recon + Web-based                                          5
+Benign + Recon + Spoofing + Web-based                      3
+Brute force + Recon + Spoofing + Web-based                 3
+Brute force + Spoofing + Web-based                         2
+Benign + Brute force + Recon + Spoofing + Web-based        2
+Brute force + Recon                                        2
+Name: count, dtype: int64
+        model  benign_precision  benign_recall  benign_f1  attack_precision  attack_recall  attack_f1  macro_f1  fpr(benign->attack)  val_benign  val_attack
+0   dt_binary            0.5791         0.5629     0.5709            0.9874         0.9882     0.9878    0.7793               0.4371        3194      110643
+1   rf_binary            0.7277         0.5354     0.6169            0.9867         0.9942     0.9904    0.8037               0.4646        3194      110643
+2  xgb_binary            0.7085         0.5899     0.6438            0.9882         0.9930     0.9906    0.8172               0.4101        3194      110643
+3  mlp_binary            0.6776         0.4975     0.5737            0.9856         0.9932     0.9894    0.7816               0.5025        3194      110643
+{
+ "val_benign_rows": 3194,
+ "train_attack_rows": 516334,
+ "train_benign_rows": 14905,
+ "val_benign_with_identical_train_attack_vector(round=None)": 0,
+ "  share(round=None)": 0.0,
+ "val_benign_with_identical_train_attack_vector(round=4)": 2,
+ "  share(round=4)": 0.0006261740763932373,
+ "val_benign_with_identical_train_attack_vector(round=2)": 2,
+ "  share(round=2)": 0.0006261740763932373,
+ "val_benign_with_identical_train_attack_vector(round=0)": 9,
+ "  share(round=0)": 0.002817783343769568,
+ "train_attack_share": 0.9719429484657565,
+ "nn": {
+  "val_benign": {
+   "n": 3194,
+   "median_dist_to_nearest_train_benign": 0.4560580253601074,
+   "median_dist_to_nearest_train_attack": 0.42618387937545776,
+   "share_nearest_attack_closer_than_nearest_benign": 0.46211646837820913,
+   "share_1NN_is_attack": 0.46211646837820913,
+   "mean_share_of_5NN_that_are_attack": 0.49755792110206637,
+   "share_all_5NN_attack": 0.14965560425798372,
+   "share_all_5NN_benign": 0.141202254226675
+  },
+  "val_attack(sample, same n)": {
+   "n": 3194,
+   "median_dist_to_nearest_train_benign": 4.451934576034546,
+   "median_dist_to_nearest_train_attack": 0.0017541493871249259,
+   "share_nearest_attack_closer_than_nearest_benign": 0.9912335629304947,
+   "share_1NN_is_attack": 0.9912335629304947,
+   "mean_share_of_5NN_that_are_attack": 0.9855979962429555,
+   "share_all_5NN_attack": 0.9561678146524734,
+   "share_all_5NN_benign": 0.0012523481527864746
+  }
+ }
+}
+{
+ "step4_balanced": {
+  "auc_roc": 0.9884672575780927,
+  "avg_precision_benign_as_positive": 0.7048254441461477,
+  "best_val_macro_f1_over_thresholds": 0.8317716145879558,
+  "threshold_of_best": 0.1,
+  "fpr_at_0.5": 0.11333750782717596,
+  "recall_at_0.5": 0.968475185958443
+ },
+ "step4_unweighted": {
+  "auc_roc": 0.9883412791163687,
+  "avg_precision_benign_as_positive": 0.6919768373779824,
+  "best_val_macro_f1_over_thresholds": 0.8300867307481854,
+  "threshold_of_best": 0.65,
+  "fpr_at_0.5": 0.41014402003757044,
+  "recall_at_0.5": 0.9929954899993674
+ },
+ "variant_info": {
+  "rows_after_exact_dedup": 817122,
+  "removed_exact_dups": 238729,
+  "benign": 21319,
+  "attack": 795803,
+  "benign_pct": 2.6090351257217406,
+  "val_rows_whose_vector_is_in_train": 0.05789439331636316,
+  "val_benign_rows_whose_vector_is_in_train": 0.00031269543464665416,
+  "val_benign_vector_in_train_with_ATTACK_label": 0.00031269543464665416,
+  "train/val sizes": [
+   571985,
+   122568
+  ]
+ },
+ "step5_balanced_exactdedup_only": {
+  "auc_roc": 0.9893930863738819,
+  "avg_precision_benign_as_positive": 0.7177105675712135,
+  "best_val_macro_f1_over_thresholds": 0.8353104850381979,
+  "threshold_of_best": 0.1,
+  "fpr_at_0.5": 0.10694183864915573,
+  "recall_at_0.5": 0.9688866549384267
+ }
+}

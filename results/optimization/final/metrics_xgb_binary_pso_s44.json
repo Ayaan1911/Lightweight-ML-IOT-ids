@@ -1,0 +1,15 @@
+{
+  "model_id": "xgb_binary_pso_s44",
+  "task": "binary",
+  "macro_f1": 0.8179133483749732,
+  "accuracy": 0.9818514028707461,
+  "precision": 0.8513892019664143,
+  "recall": 0.7905994804663501,
+  "fpr": 0.41202254226675017,
+  "optimizer": "pso",
+  "model": "xgb",
+  "seed": 44,
+  "n_features": 23,
+  "train_s": 3.9205055236816406,
+  "val_macro_f1_full": 0.8154095590070414
+}

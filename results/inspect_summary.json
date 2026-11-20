@@ -1,0 +1,11 @@
+{
+  "rows": 1055885,
+  "columns": 40,
+  "label_column": "Label",
+  "n_labels": 35,
+  "missing_total": 193,
+  "infinite_total": 25,
+  "constant_columns": [],
+  "duplicate_rows": 238732,
+  "identifier_columns_present": []
+}

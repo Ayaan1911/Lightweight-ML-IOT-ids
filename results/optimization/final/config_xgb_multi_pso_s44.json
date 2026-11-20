@@ -1,0 +1,38 @@
+{
+  "model_id": "xgb_multi_pso_s44",
+  "cols": [
+    0,
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    19,
+    20,
+    22,
+    24,
+    26,
+    31,
+    32,
+    33,
+    34,
+    36
+  ],
+  "hp": {
+    "n_estimators": 146,
+    "max_depth": 7,
+    "learning_rate": 0.1073,
+    "subsample": 0.66,
+    "colsample_bytree": 0.8586,
+    "min_child_weight": 7
+  },
+  "seed": 44
+}

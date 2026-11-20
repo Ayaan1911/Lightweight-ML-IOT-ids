@@ -1,0 +1,15 @@
+{
+  "model_id": "rf_binary_pso_s43",
+  "task": "binary",
+  "macro_f1": 0.8043119125176954,
+  "accuracy": 0.972504787505051,
+  "precision": 0.7503331048259625,
+  "recall": 0.8932726032463394,
+  "fpr": 0.19067000626174077,
+  "optimizer": "pso",
+  "model": "rf",
+  "seed": 43,
+  "n_features": 22,
+  "train_s": 13.760619640350342,
+  "val_macro_f1_full": 0.8017888378347255
+}

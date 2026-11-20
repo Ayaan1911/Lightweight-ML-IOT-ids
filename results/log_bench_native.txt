@@ -1,0 +1,2 @@
+mlp_binary_tflite_f32 ok
+mlp_multi_tflite_f32 ok

@@ -1,0 +1,38 @@
+{
+  "model_id": "xgb_binary_random_s44",
+  "cols": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    11,
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21,
+    25,
+    28,
+    30,
+    31,
+    32,
+    34,
+    36,
+    38
+  ],
+  "hp": {
+    "n_estimators": 75,
+    "max_depth": 8,
+    "learning_rate": 0.1281,
+    "subsample": 0.8445,
+    "colsample_bytree": 0.552,
+    "min_child_weight": 6
+  },
+  "seed": 44
+}

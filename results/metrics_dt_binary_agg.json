@@ -1,0 +1,10 @@
+{
+  "model_id": "dt_binary_agg",
+  "task": "binary",
+  "macro_f1": 0.775820481613301,
+  "accuracy": 0.9768794251480174,
+  "precision": 0.7928074949995818,
+  "recall": 0.760829338373211,
+  "fpr": 0.4680651221039449,
+  "n_features": 39
+}

@@ -1,0 +1,41 @@
+,dtype
+Header_Length,float32
+Protocol Type,float32
+Time_To_Live,float32
+Rate,float32
+fin_flag_number,float32
+syn_flag_number,float32
+rst_flag_number,float32
+psh_flag_number,float32
+ack_flag_number,float32
+ece_flag_number,float32
+cwr_flag_number,float32
+ack_count,float32
+syn_count,float32
+fin_count,float32
+rst_count,float32
+HTTP,float32
+HTTPS,float32
+DNS,float32
+Telnet,float32
+SMTP,float32
+SSH,float32
+IRC,float32
+TCP,float32
+UDP,float32
+DHCP,float32
+ARP,float32
+ICMP,float32
+IGMP,float32
+IPv,float32
+LLC,float32
+Tot sum,float32
+Min,float32
+Max,float32
+AVG,float32
+Std,float32
+Tot size,float32
+IAT,float32
+Number,float32
+Variance,float32
+Label,str

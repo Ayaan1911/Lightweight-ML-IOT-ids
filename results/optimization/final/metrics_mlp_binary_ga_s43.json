@@ -1,0 +1,15 @@
+{
+  "model_id": "mlp_binary_ga_s43",
+  "task": "binary",
+  "macro_f1": 0.7519779856434112,
+  "accuracy": 0.9781707338498569,
+  "precision": 0.8334187936821494,
+  "recall": 0.7038763375130112,
+  "fpr": 0.5867251095804634,
+  "optimizer": "ga",
+  "model": "mlp",
+  "seed": 43,
+  "n_features": 27,
+  "train_s": 24.981369495391846,
+  "val_macro_f1_full": 0.7526867895688608
+}

@@ -1,0 +1,10 @@
+{
+  "model_id": "rf_binary_mod",
+  "task": "binary",
+  "macro_f1": 0.791394592061062,
+  "accuracy": 0.9805425253430313,
+  "precision": 0.8519317863193476,
+  "recall": 0.7494876271366427,
+  "fpr": 0.49530369442705074,
+  "n_features": 20
+}

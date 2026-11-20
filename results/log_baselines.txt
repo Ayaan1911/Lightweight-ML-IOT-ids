@@ -1,0 +1,36 @@
+dt_binary {'class_weight': None, 'max_depth': None} 0.761 2.0
+dt_binary {'class_weight': None, 'max_depth': 30} 0.7613 2.0
+dt_binary {'class_weight': None, 'max_depth': 20} 0.7793 1.9
+dt_binary {'class_weight': 'balanced', 'max_depth': None} 0.7599 3.3
+dt_binary {'class_weight': 'balanced', 'max_depth': 30} 0.7687 2.8
+dt_binary {'class_weight': 'balanced', 'max_depth': 20} 0.7348 2.5
+rf_binary {'class_weight': None, 'n_estimators': 100} 0.8037 15.0
+rf_binary {'class_weight': 'balanced_subsample', 'n_estimators': 100} 0.7996 16.3
+xgb_binary {'weighted': False, 'max_depth': 6, 'n_estimators': 150, 'learning_rate': 0.2} 0.8141 2.3
+xgb_binary {'weighted': False, 'max_depth': 10, 'n_estimators': 150, 'learning_rate': 0.2} 0.8162 3.5
+xgb_binary {'weighted': False, 'max_depth': 10, 'n_estimators': 300, 'learning_rate': 0.1} 0.8172 6.2
+xgb_binary {'weighted': False, 'max_depth': 14, 'n_estimators': 200, 'learning_rate': 0.1} 0.815 5.4
+xgb_binary {'weighted': True, 'max_depth': 6, 'n_estimators': 150, 'learning_rate': 0.2} 0.7393 2.4
+xgb_binary {'weighted': True, 'max_depth': 10, 'n_estimators': 150, 'learning_rate': 0.2} 0.7899 3.6
+xgb_binary {'weighted': True, 'max_depth': 10, 'n_estimators': 300, 'learning_rate': 0.1} 0.7888 6.4
+xgb_binary {'weighted': True, 'max_depth': 14, 'n_estimators': 200, 'learning_rate': 0.1} 0.8071 6.7
+mlp_binary {'weighted': False, 'hidden': (128, 64)} 0.7816 62.7
+mlp_binary {'weighted': True, 'hidden': (128, 64)} 0.6846 58.5
+dt_multi {'class_weight': None, 'max_depth': None} 0.675 8.4
+dt_multi {'class_weight': None, 'max_depth': 30} 0.6866 7.9
+dt_multi {'class_weight': None, 'max_depth': 20} 0.7069 6.9
+dt_multi {'class_weight': 'balanced', 'max_depth': None} 0.6757 8.3
+dt_multi {'class_weight': 'balanced', 'max_depth': 30} 0.6843 8.1
+dt_multi {'class_weight': 'balanced', 'max_depth': 20} 0.7008 7.2
+rf_multi {'class_weight': None, 'n_estimators': 100} 0.7379 31.4
+rf_multi {'class_weight': 'balanced_subsample', 'n_estimators': 100} 0.7407 34.4
+xgb_multi {'weighted': False, 'max_depth': 6, 'n_estimators': 150, 'learning_rate': 0.2} 0.7427 20.9
+xgb_multi {'weighted': False, 'max_depth': 10, 'n_estimators': 150, 'learning_rate': 0.2} 0.7491 26.8
+xgb_multi {'weighted': False, 'max_depth': 10, 'n_estimators': 300, 'learning_rate': 0.1} 0.7512 53.3
+xgb_multi {'weighted': False, 'max_depth': 14, 'n_estimators': 200, 'learning_rate': 0.1} 0.749 55.6
+xgb_multi {'weighted': True, 'max_depth': 6, 'n_estimators': 150, 'learning_rate': 0.2} 0.736 24.3
+xgb_multi {'weighted': True, 'max_depth': 10, 'n_estimators': 150, 'learning_rate': 0.2} 0.7445 29.1
+xgb_multi {'weighted': True, 'max_depth': 10, 'n_estimators': 300, 'learning_rate': 0.1} 0.747 57.3
+xgb_multi {'weighted': True, 'max_depth': 14, 'n_estimators': 200, 'learning_rate': 0.1} 0.747 48.0
+mlp_multi {'weighted': False, 'hidden': (128, 64)} 0.7084 87.1
+mlp_multi {'weighted': True, 'hidden': (128, 64)} 0.6851 84.0

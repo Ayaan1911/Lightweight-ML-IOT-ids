@@ -1,0 +1,62 @@
+{
+  "mlp_binary_q8": {
+    "chosen": "mlp_binary_q8",
+    "candidates": {
+      "mlp_binary_q8": {
+        "mode": "full-integer",
+        "val_macro_f1": 0.7943084206951243,
+        "size_kb": 22.0703125
+      },
+      "mlp_binary_q8dyn": {
+        "mode": "dynamic-range",
+        "val_macro_f1": 0.7817283690062801,
+        "size_kb": 19.40625
+      }
+    }
+  },
+  "mlp_binary_distq8": {
+    "chosen": "mlp_binary_distq8",
+    "candidates": {
+      "mlp_binary_distq8": {
+        "mode": "full-integer",
+        "val_macro_f1": 0.7897605866073202,
+        "size_kb": 7.03125
+      },
+      "mlp_binary_distq8dyn": {
+        "mode": "dynamic-range",
+        "val_macro_f1": 0.7795488008857803,
+        "size_kb": 7.2109375
+      }
+    }
+  },
+  "mlp_multi_q8": {
+    "chosen": "mlp_multi_q8dyn",
+    "candidates": {
+      "mlp_multi_q8": {
+        "mode": "full-integer",
+        "val_macro_f1": 0.6702744116473248,
+        "size_kb": 22.78125
+      },
+      "mlp_multi_q8dyn": {
+        "mode": "dynamic-range",
+        "val_macro_f1": 0.6989608535883368,
+        "size_kb": 21.2734375
+      }
+    }
+  },
+  "mlp_multi_distq8": {
+    "chosen": "mlp_multi_distq8dyn",
+    "candidates": {
+      "mlp_multi_distq8": {
+        "mode": "full-integer",
+        "val_macro_f1": 0.6488369224551382,
+        "size_kb": 7.3515625
+      },
+      "mlp_multi_distq8dyn": {
+        "mode": "dynamic-range",
+        "val_macro_f1": 0.6750084747590058,
+        "size_kb": 7.71875
+      }
+    }
+  }
+}

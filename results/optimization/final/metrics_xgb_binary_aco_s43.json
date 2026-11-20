@@ -1,0 +1,15 @@
+{
+  "model_id": "xgb_binary_aco_s43",
+  "task": "binary",
+  "macro_f1": 0.816895394353419,
+  "accuracy": 0.981939247000123,
+  "precision": 0.8548426858423422,
+  "recall": 0.7866920328930074,
+  "fpr": 0.4201628052598622,
+  "optimizer": "aco",
+  "model": "xgb",
+  "seed": 43,
+  "n_features": 29,
+  "train_s": 4.582764148712158,
+  "val_macro_f1_full": 0.8164190146202355
+}

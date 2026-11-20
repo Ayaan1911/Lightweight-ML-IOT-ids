@@ -1,0 +1,30 @@
+{
+  "model_id": "dt_binary_ga",
+  "cols": [
+    0,
+    2,
+    4,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    24,
+    29,
+    32,
+    33,
+    34,
+    35,
+    37
+  ],
+  "hp": {
+    "max_depth": 9,
+    "min_samples_split": 21,
+    "min_samples_leaf": 5,
+    "criterion": "log_loss",
+    "class_weight": null
+  },
+  "seed": 42
+}

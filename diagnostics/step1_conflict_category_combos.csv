@@ -1,0 +1,18 @@
+cat,n_vectors
+DDoS + DoS,23959
+Spoofing + Web-based,33
+Recon + Spoofing,23
+Recon + Spoofing + Web-based,12
+Benign + Spoofing,11
+Benign + Spoofing + Web-based,6
+Recon + Web-based,5
+Benign + Recon + Spoofing + Web-based,3
+Brute force + Recon + Spoofing + Web-based,3
+Brute force + Spoofing + Web-based,2
+Benign + Brute force + Recon + Spoofing + Web-based,2
+Brute force + Recon,2
+Benign + Brute force + Spoofing + Web-based,1
+Benign + Recon,1
+Benign + Brute force,1
+Brute force + Web-based,1
+Benign + Recon + Spoofing,1

@@ -1,0 +1,11 @@
+{
+  "model_id": "mlp_binary_q8",
+  "task": "binary",
+  "macro_f1": 0.7942280068735363,
+  "accuracy": 0.9784869727156135,
+  "precision": 0.8076271919072746,
+  "recall": 0.782027600827869,
+  "fpr": 0.426111458985598,
+  "quant_mode": "full-integer",
+  "val_macro_f1": 0.7943084206951243
+}

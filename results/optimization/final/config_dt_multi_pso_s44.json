@@ -1,0 +1,39 @@
+{
+  "model_id": "dt_multi_pso_s44",
+  "cols": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    7,
+    8,
+    9,
+    13,
+    15,
+    16,
+    17,
+    20,
+    21,
+    23,
+    26,
+    27,
+    28,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "hp": {
+    "max_depth": 40,
+    "min_samples_split": 50,
+    "min_samples_leaf": 2,
+    "criterion": "entropy",
+    "class_weight": null
+  },
+  "seed": 44
+}

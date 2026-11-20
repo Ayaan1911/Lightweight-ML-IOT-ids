@@ -1,0 +1,15 @@
+{
+  "model_id": "dt_binary_aco_s44",
+  "task": "binary",
+  "macro_f1": 0.7956637924651495,
+  "accuracy": 0.9796201619845746,
+  "precision": 0.8265377503630137,
+  "recall": 0.7704485898542142,
+  "fpr": 0.4511584220413275,
+  "optimizer": "aco",
+  "model": "dt",
+  "seed": 44,
+  "n_features": 21,
+  "train_s": 0.927767276763916,
+  "val_macro_f1_full": 0.795387371791485
+}

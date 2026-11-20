@@ -1,0 +1,33 @@
+{
+  "model_id": "rf_binary_ga_s43",
+  "cols": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    11,
+    16,
+    17,
+    18,
+    20,
+    21,
+    23,
+    27,
+    31,
+    32,
+    33,
+    35
+  ],
+  "hp": {
+    "n_estimators": 130,
+    "max_depth": 30,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "class_weight": "balanced_subsample"
+  },
+  "seed": 43
+}

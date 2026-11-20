@@ -1,0 +1,15 @@
+{
+  "model_id": "mlp_binary_aco_s43",
+  "task": "binary",
+  "macro_f1": 0.7654888756162914,
+  "accuracy": 0.9786011700838033,
+  "precision": 0.8313725277491788,
+  "recall": 0.7224927354774802,
+  "fpr": 0.5488415779586725,
+  "optimizer": "aco",
+  "model": "mlp",
+  "seed": 43,
+  "n_features": 23,
+  "train_s": 62.53453493118286,
+  "val_macro_f1_full": 0.7639819995076824
+}

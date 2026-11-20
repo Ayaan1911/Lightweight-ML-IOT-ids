@@ -1,0 +1,40 @@
+{
+  "step4_balanced": {
+    "auc_roc": 0.9884672575780927,
+    "avg_precision_benign_as_positive": 0.7048254441461477,
+    "best_val_macro_f1_over_thresholds": 0.8317716145879558,
+    "threshold_of_best": 0.1,
+    "fpr_at_0.5": 0.11333750782717596,
+    "recall_at_0.5": 0.968475185958443
+  },
+  "step4_unweighted": {
+    "auc_roc": 0.9883412791163687,
+    "avg_precision_benign_as_positive": 0.6919768373779824,
+    "best_val_macro_f1_over_thresholds": 0.8300867307481854,
+    "threshold_of_best": 0.65,
+    "fpr_at_0.5": 0.41014402003757044,
+    "recall_at_0.5": 0.9929954899993674
+  },
+  "variant_info": {
+    "rows_after_exact_dedup": 817122,
+    "removed_exact_dups": 238729,
+    "benign": 21319,
+    "attack": 795803,
+    "benign_pct": 2.6090351257217406,
+    "val_rows_whose_vector_is_in_train": 0.05789439331636316,
+    "val_benign_rows_whose_vector_is_in_train": 0.00031269543464665416,
+    "val_benign_vector_in_train_with_ATTACK_label": 0.00031269543464665416,
+    "train/val sizes": [
+      571985,
+      122568
+    ]
+  },
+  "step5_balanced_exactdedup_only": {
+    "auc_roc": 0.9893930863738819,
+    "avg_precision_benign_as_positive": 0.7177105675712135,
+    "best_val_macro_f1_over_thresholds": 0.8353104850381979,
+    "threshold_of_best": 0.1,
+    "fpr_at_0.5": 0.10694183864915573,
+    "recall_at_0.5": 0.9688866549384267
+  }
+}

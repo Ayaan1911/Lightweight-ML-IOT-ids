@@ -1,0 +1,448 @@
+{
+  "dt_binary": {
+    "chosen": {
+      "class_weight": null,
+      "max_depth": 20
+    },
+    "val_macro_f1": 0.7793371082626381,
+    "train_time_s": 1.8920173645019531,
+    "trials": [
+      {
+        "cand": {
+          "class_weight": null,
+          "max_depth": null
+        },
+        "val_macro_f1": 0.7610322561772279,
+        "train_s": 2.030853509902954
+      },
+      {
+        "cand": {
+          "class_weight": null,
+          "max_depth": 30
+        },
+        "val_macro_f1": 0.7613203543039764,
+        "train_s": 1.9847028255462646
+      },
+      {
+        "cand": {
+          "class_weight": null,
+          "max_depth": 20
+        },
+        "val_macro_f1": 0.7793371082626381,
+        "train_s": 1.8908889293670654
+      },
+      {
+        "cand": {
+          "class_weight": "balanced",
+          "max_depth": null
+        },
+        "val_macro_f1": 0.7599297512835081,
+        "train_s": 3.2502644062042236
+      },
+      {
+        "cand": {
+          "class_weight": "balanced",
+          "max_depth": 30
+        },
+        "val_macro_f1": 0.7686877977054334,
+        "train_s": 2.7946441173553467
+      },
+      {
+        "cand": {
+          "class_weight": "balanced",
+          "max_depth": 20
+        },
+        "val_macro_f1": 0.7348070528077523,
+        "train_s": 2.495198965072632
+      }
+    ],
+    "file": "dt_binary.joblib",
+    "seed": 42,
+    "n_features": 39
+  },
+  "rf_binary": {
+    "chosen": {
+      "class_weight": null,
+      "n_estimators": 100
+    },
+    "val_macro_f1": 0.8036605743331535,
+    "train_time_s": 15.002544641494751,
+    "trials": [
+      {
+        "cand": {
+          "class_weight": null,
+          "n_estimators": 100
+        },
+        "val_macro_f1": 0.8036605743331535,
+        "train_s": 15.001546382904053
+      },
+      {
+        "cand": {
+          "class_weight": "balanced_subsample",
+          "n_estimators": 100
+        },
+        "val_macro_f1": 0.7995586049574156,
+        "train_s": 16.341553211212158
+      }
+    ],
+    "file": "rf_binary.joblib",
+    "seed": 42,
+    "n_features": 39
+  },
+  "xgb_binary": {
+    "chosen": {
+      "weighted": false,
+      "max_depth": 10,
+      "n_estimators": 300,
+      "learning_rate": 0.1
+    },
+    "val_macro_f1": 0.8171864768266579,
+    "train_time_s": 6.190676212310791,
+    "trials": [
+      {
+        "cand": {
+          "weighted": false,
+          "max_depth": 6,
+          "n_estimators": 150,
+          "learning_rate": 0.2
+        },
+        "val_macro_f1": 0.8140769309900626,
+        "train_s": 2.2738778591156006
+      },
+      {
+        "cand": {
+          "weighted": false,
+          "max_depth": 10,
+          "n_estimators": 150,
+          "learning_rate": 0.2
+        },
+        "val_macro_f1": 0.8162395190046103,
+        "train_s": 3.488852024078369
+      },
+      {
+        "cand": {
+          "weighted": false,
+          "max_depth": 10,
+          "n_estimators": 300,
+          "learning_rate": 0.1
+        },
+        "val_macro_f1": 0.8171864768266579,
+        "train_s": 6.188155174255371
+      },
+      {
+        "cand": {
+          "weighted": false,
+          "max_depth": 14,
+          "n_estimators": 200,
+          "learning_rate": 0.1
+        },
+        "val_macro_f1": 0.8150390850204172,
+        "train_s": 5.418778896331787
+      },
+      {
+        "cand": {
+          "weighted": true,
+          "max_depth": 6,
+          "n_estimators": 150,
+          "learning_rate": 0.2
+        },
+        "val_macro_f1": 0.7392908042349275,
+        "train_s": 2.4104998111724854
+      },
+      {
+        "cand": {
+          "weighted": true,
+          "max_depth": 10,
+          "n_estimators": 150,
+          "learning_rate": 0.2
+        },
+        "val_macro_f1": 0.7898942216996938,
+        "train_s": 3.5620481967926025
+      },
+      {
+        "cand": {
+          "weighted": true,
+          "max_depth": 10,
+          "n_estimators": 300,
+          "learning_rate": 0.1
+        },
+        "val_macro_f1": 0.7888427975479211,
+        "train_s": 6.401855230331421
+      },
+      {
+        "cand": {
+          "weighted": true,
+          "max_depth": 14,
+          "n_estimators": 200,
+          "learning_rate": 0.1
+        },
+        "val_macro_f1": 0.8070747124308102,
+        "train_s": 6.714496374130249
+      }
+    ],
+    "file": "xgb_binary.json",
+    "seed": 42,
+    "n_features": 39
+  },
+  "mlp_binary": {
+    "chosen": {
+      "weighted": false,
+      "hidden": [
+        128,
+        64
+      ]
+    },
+    "val_macro_f1": 0.7815605512869164,
+    "train_time_s": 62.71437215805054,
+    "trials": [
+      {
+        "cand": {
+          "weighted": false,
+          "hidden": [
+            128,
+            64
+          ]
+        },
+        "val_macro_f1": 0.7815605512869164,
+        "train_s": 62.71179747581482
+      },
+      {
+        "cand": {
+          "weighted": true,
+          "hidden": [
+            128,
+            64
+          ]
+        },
+        "val_macro_f1": 0.6846375674977703,
+        "train_s": 58.53536343574524
+      }
+    ],
+    "file": "mlp_binary.keras",
+    "seed": 42,
+    "n_features": 39
+  },
+  "dt_multi": {
+    "chosen": {
+      "class_weight": null,
+      "max_depth": 20
+    },
+    "val_macro_f1": 0.7069233251494887,
+    "train_time_s": 6.853280782699585,
+    "trials": [
+      {
+        "cand": {
+          "class_weight": null,
+          "max_depth": null
+        },
+        "val_macro_f1": 0.6750422763866964,
+        "train_s": 8.358581781387329
+      },
+      {
+        "cand": {
+          "class_weight": null,
+          "max_depth": 30
+        },
+        "val_macro_f1": 0.68660317081081,
+        "train_s": 7.909576177597046
+      },
+      {
+        "cand": {
+          "class_weight": null,
+          "max_depth": 20
+        },
+        "val_macro_f1": 0.7069233251494887,
+        "train_s": 6.85123085975647
+      },
+      {
+        "cand": {
+          "class_weight": "balanced",
+          "max_depth": null
+        },
+        "val_macro_f1": 0.6756696424929938,
+        "train_s": 8.349619626998901
+      },
+      {
+        "cand": {
+          "class_weight": "balanced",
+          "max_depth": 30
+        },
+        "val_macro_f1": 0.6842614183929632,
+        "train_s": 8.087071895599365
+      },
+      {
+        "cand": {
+          "class_weight": "balanced",
+          "max_depth": 20
+        },
+        "val_macro_f1": 0.7007521175987437,
+        "train_s": 7.21505331993103
+      }
+    ],
+    "file": "dt_multi.joblib",
+    "seed": 42,
+    "n_features": 39
+  },
+  "rf_multi": {
+    "chosen": {
+      "class_weight": "balanced_subsample",
+      "n_estimators": 100
+    },
+    "val_macro_f1": 0.7407253153005389,
+    "train_time_s": 34.38881754875183,
+    "trials": [
+      {
+        "cand": {
+          "class_weight": null,
+          "n_estimators": 100
+        },
+        "val_macro_f1": 0.7378724315593743,
+        "train_s": 31.37944269180298
+      },
+      {
+        "cand": {
+          "class_weight": "balanced_subsample",
+          "n_estimators": 100
+        },
+        "val_macro_f1": 0.7407253153005389,
+        "train_s": 34.38728213310242
+      }
+    ],
+    "file": "rf_multi.joblib",
+    "seed": 42,
+    "n_features": 39
+  },
+  "xgb_multi": {
+    "chosen": {
+      "weighted": false,
+      "max_depth": 10,
+      "n_estimators": 300,
+      "learning_rate": 0.1
+    },
+    "val_macro_f1": 0.7512236331011318,
+    "train_time_s": 53.28298091888428,
+    "trials": [
+      {
+        "cand": {
+          "weighted": false,
+          "max_depth": 6,
+          "n_estimators": 150,
+          "learning_rate": 0.2
+        },
+        "val_macro_f1": 0.7427165490551667,
+        "train_s": 20.925395727157593
+      },
+      {
+        "cand": {
+          "weighted": false,
+          "max_depth": 10,
+          "n_estimators": 150,
+          "learning_rate": 0.2
+        },
+        "val_macro_f1": 0.7491139263248903,
+        "train_s": 26.82437539100647
+      },
+      {
+        "cand": {
+          "weighted": false,
+          "max_depth": 10,
+          "n_estimators": 300,
+          "learning_rate": 0.1
+        },
+        "val_macro_f1": 0.7512236331011318,
+        "train_s": 53.28298091888428
+      },
+      {
+        "cand": {
+          "weighted": false,
+          "max_depth": 14,
+          "n_estimators": 200,
+          "learning_rate": 0.1
+        },
+        "val_macro_f1": 0.748962665704247,
+        "train_s": 55.641135454177856
+      },
+      {
+        "cand": {
+          "weighted": true,
+          "max_depth": 6,
+          "n_estimators": 150,
+          "learning_rate": 0.2
+        },
+        "val_macro_f1": 0.7359659304776693,
+        "train_s": 24.275538444519043
+      },
+      {
+        "cand": {
+          "weighted": true,
+          "max_depth": 10,
+          "n_estimators": 150,
+          "learning_rate": 0.2
+        },
+        "val_macro_f1": 0.7445255867846372,
+        "train_s": 29.132638454437256
+      },
+      {
+        "cand": {
+          "weighted": true,
+          "max_depth": 10,
+          "n_estimators": 300,
+          "learning_rate": 0.1
+        },
+        "val_macro_f1": 0.7470061732028946,
+        "train_s": 57.31384253501892
+      },
+      {
+        "cand": {
+          "weighted": true,
+          "max_depth": 14,
+          "n_estimators": 200,
+          "learning_rate": 0.1
+        },
+        "val_macro_f1": 0.7470311562399208,
+        "train_s": 48.02370810508728
+      }
+    ],
+    "file": "xgb_multi.json",
+    "seed": 42,
+    "n_features": 39
+  },
+  "mlp_multi": {
+    "chosen": {
+      "weighted": false,
+      "hidden": [
+        128,
+        64
+      ]
+    },
+    "val_macro_f1": 0.7083571165582336,
+    "train_time_s": 87.13112616539001,
+    "trials": [
+      {
+        "cand": {
+          "weighted": false,
+          "hidden": [
+            128,
+            64
+          ]
+        },
+        "val_macro_f1": 0.7083571165582336,
+        "train_s": 87.13062810897827
+      },
+      {
+        "cand": {
+          "weighted": true,
+          "hidden": [
+            128,
+            64
+          ]
+        },
+        "val_macro_f1": 0.6850599339647823,
+        "train_s": 84.01240682601929
+      }
+    ],
+    "file": "mlp_multi.keras",
+    "seed": 42,
+    "n_features": 39
+  }
+}

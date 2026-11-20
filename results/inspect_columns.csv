@@ -1,0 +1,40 @@
+,missing,infinite,nunique,constant
+Header_Length,0,0,1559,False
+Protocol Type,0,0,5,False
+Time_To_Live,0,0,9713,False
+Rate,0,25,229397,False
+fin_flag_number,1,0,190,False
+syn_flag_number,1,0,259,False
+rst_flag_number,2,0,200,False
+psh_flag_number,2,0,283,False
+ack_flag_number,2,0,363,False
+ece_flag_number,2,0,15,False
+cwr_flag_number,2,0,13,False
+ack_count,2,0,101,False
+syn_count,2,0,101,False
+fin_count,2,0,101,False
+rst_count,2,0,101,False
+HTTP,2,0,212,False
+HTTPS,2,0,233,False
+DNS,3,0,154,False
+Telnet,3,0,10,False
+SMTP,3,0,10,False
+SSH,3,0,20,False
+IRC,3,0,10,False
+TCP,4,0,324,False
+UDP,4,0,310,False
+DHCP,4,0,30,False
+ARP,6,0,166,False
+ICMP,6,0,208,False
+IGMP,6,0,11,False
+IPv,7,0,166,False
+LLC,7,0,166,False
+Tot sum,7,0,52103,False
+Min,7,0,630,False
+Max,7,0,3568,False
+AVG,7,0,54773,False
+Std,29,0,179502,False
+Tot size,7,0,54773,False
+IAT,7,0,232169,False
+Number,8,0,100,False
+Variance,31,0,179727,False
