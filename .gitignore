@@ -1,0 +1,31 @@
+# data
+MERGED_CSV/
+data_processed/
+*.parquet
+*.npz.data
+# models
+models/
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.keras
+*.tflite
+# env / docker leftovers / caches
+.venv/
+venv/
+.env
+.env.*
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.dockerignore.bak
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+# local-only extras
+test_access.log
+results/optimization/orig_*.bak
+README.pdf
+Synopsis_IoT (1)_261109_162820.pdf
