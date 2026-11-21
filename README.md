@@ -88,3 +88,7 @@ docker build -t iot-bench . ; .venv\Scripts\python -m optimization.bench_docker 
 
 ## Layout
 `src/` code, `bench.py` single-model benchmark, `run_bench*.py` orchestrators, `verify.py` checks, `results/` tables/predictions/metrics, `models/` saved models + `*.meta.json`, `figures/`, `diagnostics/` (post-hoc validation-only FPR diagnostic), `data_processed/` (parquet, split indices). `test_access.log` records every test-set scoring.
+
+## Threshold analysis (post-hoc, binary baselines)
+
+`diagnostics/threshold/` holds a predict-only analysis of the four binary baselines (no retraining, no tuning). Thresholds are chosen on the **validation split only** (highest cutoff with attack recall >= 0.98 and >= 0.99, and the cutoff maximizing validation macro F1) and applied unchanged to the test split; nothing is chosen using test results. Outputs: CSV tables, `SUMMARY.md` and `fpr_vs_recall_test.png`. The balanced-subset numbers (100 subsets, threshold 0.5) are a **comparability supplement only**, not a replacement for the main results. This use of stored test scores is logged in `test_access.log` as `POSTHOC_threshold_analysis_binary_baselines`; it adds two expected failures to `verify.py` (its test-log checks assume only model-scoring entries).

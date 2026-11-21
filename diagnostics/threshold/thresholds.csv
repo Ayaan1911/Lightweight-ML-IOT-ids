@@ -1,0 +1,13 @@
+model,rule,threshold,pred_attack_if
+dt,recall>=0.98,0.8181818181818182,score >= threshold
+dt,recall>=0.99,0.32158590308370044,score >= threshold
+dt,max_val_macro_f1,0.7666666666666667,score >= threshold
+rf,recall>=0.98,0.77,score >= threshold
+rf,recall>=0.99,0.64,score >= threshold
+rf,max_val_macro_f1,0.67,score >= threshold
+xgb,recall>=0.98,0.8054934144020081,score >= threshold
+xgb,recall>=0.99,0.6171227693557739,score >= threshold
+xgb,max_val_macro_f1,0.6432622075080872,score >= threshold
+mlp,recall>=0.98,0.765508234500885,score >= threshold
+mlp,recall>=0.99,0.6049575209617615,score >= threshold
+mlp,max_val_macro_f1,0.6382322907447815,score >= threshold
