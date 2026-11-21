@@ -48,9 +48,14 @@ def split_checks():
         check("scaler scale == train std", np.allclose(z["scale"], X.std(0), rtol=1e-9, atol=1e-9))
 
 
+POSTHOC = "POSTHOC_"
+PH_NAME = "POSTHOC_threshold_analysis_binary_baselines"
+
+
 def test_log_checks():
     lg = ROOT / "test_access.log"
     ids = [l.split("\t")[0:2] for l in lg.read_text().splitlines()] if lg.exists() else []
+    ids = [i for i in ids if not i[1].startswith(POSTHOC)]  # POSTHOC_ entries are checked in posthoc_checks(); model-scoring entries keep every check below
     seen_all = pd.Series([i[1] for i in ids]).value_counts()
     check("each model scored on test exactly once", (seen_all == 1).all() if len(seen_all) else True, str(seen_all[seen_all > 1].to_dict()))
     opt_ids = {Path(f).stem[len("metrics_"):] for f in glob.glob(str(RES / "optimization" / "final" / "metrics_*.json"))}
@@ -63,6 +68,30 @@ def test_log_checks():
         ts = pd.Timestamp(t).timestamp()
         late = [p.name for p in mf if p.stat().st_mtime > ts + 2]
         check(f"{mid} frozen before test scoring", not late, str(late))
+
+
+def posthoc_checks():
+    """Post-hoc threshold analysis (diagnostics/threshold): log entry, thresholds recomputed from validation scores, test metrics at 0.5."""
+    D = ROOT / "diagnostics" / "threshold"
+    if not (D / "thresholds.csv").exists():
+        return
+    log = [l.split("\t")[1] for l in (ROOT / "test_access.log").read_text().splitlines()]
+    check("exactly one POSTHOC_threshold_analysis_binary_baselines log entry", sum(e.split(" ")[0] == PH_NAME for e in log) == 1)
+    check("no other POSTHOC_ log entries", sum(e.startswith(POSTHOC) for e in log) == 1)
+    thr = pd.read_csv(D / "thresholds.csv")
+    for m in ("dt", "rf", "xgb", "mlp"):
+        z = np.load(D / f"scores_{m}.npz"); s, y = z["val_score"], z["val_y"]
+        a, b = np.sort(s[y == 1]), np.sort(s[y == 0]); t = np.unique(s)       # candidate cutoffs = unique validation scores
+        tp = len(a) - np.searchsorted(a, t, "left"); fp = len(b) - np.searchsorted(b, t, "left"); fn, tn = len(a) - tp, len(b) - fp
+        f = lambda x, u, v: np.where(x == 0, 0.0, 2 * x / np.maximum(2 * x + u + v, 1))
+        mf = (f(tp, fp, fn) + f(tn, fn, fp)) / 2; rec = tp / len(a)
+        want = {"recall>=0.98": t[rec >= 0.98].max(), "recall>=0.99": t[rec >= 0.99].max(), "max_val_macro_f1": t[mf == mf.max()].max()}
+        got = thr[thr.model == m].set_index("rule")["threshold"]
+        for rule, w in want.items():
+            check(f"{m} {rule} threshold recomputed from validation scores equals thresholds.csv", float(got[rule]) == float(w), f"{got[rule]} vs {w}")
+        r = compute(z["test_y"], (z["test_score"] > 0.5).astype(int), 2); st = jload(RES / f"metrics_{m}_binary.json")
+        check(f"{m} test macro F1 at 0.5 from scores equals metrics json", abs(r["macro_f1"] - st["macro_f1"]) < 1e-12, f"{r['macro_f1']} vs {st['macro_f1']}")
+        check(f"{m} test FPR at 0.5 from scores equals metrics json", abs(r["fpr"] - st["fpr"]) < 1e-12, f"{r['fpr']} vs {st['fpr']}")
 
 
 def metric_checks():
@@ -163,6 +192,7 @@ def optimization_checks():
     bad = [r for r, h in snap["files"].items() if not (ROOT / r).exists() or hashlib.sha256((ROOT / r).read_bytes()).hexdigest() != h]
     check("no pre-existing result/model/code file changed", not bad, str(bad[:5]))
     lg = (ROOT / "test_access.log").read_text().splitlines()
+    lg = [l for l in lg if not l.split("\t")[1].startswith(POSTHOC)]  # model-scoring entries only
     check("test_access.log: original 80 lines unchanged (append-only)", lg[:len(snap["test_log_first_lines"])] == snap["test_log_first_lines"])
     cells = json.loads((ROOT / "iot_ids.ipynb").read_text(encoding="utf-8"))["cells"]
     check("iot_ids.ipynb original cells unchanged", ["".join(c["source"]) for c in cells[:len(snap["notebook_cell_sources"])]] == snap["notebook_cell_sources"])
@@ -186,6 +216,7 @@ def optimization_checks():
     cnt = pd.Series([l.split("\t")[1] for l in lg]).value_counts()
     check("final models: each scored exactly once in test_access.log", all(cnt.get(i, 0) == 1 for i in ids), str([i for i in ids if cnt.get(i, 0) != 1][:5]))
     check("test log has no extra entries beyond final models", len(lg) - 80 == len(ids), f"{len(lg) - 80} vs {len(ids)}")
+    check("test log: exactly 96 final-model scoring entries beyond the original 80", len(lg) - 80 == 96 and len(ids) == 96, f"{len(lg) - 80} / {len(ids)}")
     last_run = max((Path(f).stat().st_mtime for f in glob.glob(str(O / "runs" / "*.json"))), default=0)
     first_t = min((pd.Timestamp(l.split("\t")[0]).timestamp() for l in lg[80:]), default=1e18)
     check("test scoring started only after all optimizer runs finished", first_t >= last_run - 2)
@@ -238,6 +269,6 @@ def optimization_checks():
 
 if __name__ == "__main__":
     optimization_checks()
-    split_checks(); test_log_checks(); metric_checks(); model_size_checks(); notebook_checks(); leak_checks("--leak" in sys.argv)
+    split_checks(); test_log_checks(); posthoc_checks(); metric_checks(); model_size_checks(); notebook_checks(); leak_checks("--leak" in sys.argv)
     print(f"verify: {PASSES} passed, {len(FAILS)} failed")
     sys.exit(1 if FAILS else 0)
