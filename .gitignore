@@ -25,7 +25,6 @@ __pycache__/
 Thumbs.db
 desktop.ini
 # local-only extras
-test_access.log
 results/optimization/orig_*.bak
 README.pdf
 Synopsis_IoT (1)_261109_162820.pdf

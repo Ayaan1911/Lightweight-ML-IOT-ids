@@ -1,0 +1,52 @@
+Recorded on 2026-11-24; the paper reports docker 29.9.2 with an engine VM of 16 CPUs and 7.57 GiB.
+
+== docker version ==
+Client:
+ Version:           29.9.2
+ API version:       1.56
+ Go version:        go1.26.10
+ Git commit:        a82e528
+ Built:             Tue Oct 20 19:44:07 2026
+ OS/Arch:           windows/amd64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.98.0 (245422)
+ Engine:
+  Version:          29.9.2
+  API version:      1.56 (minimum version 1.40)
+  Go version:       go1.26.10
+  Git commit:       0367cbe
+  Built:            Tue Oct 20 18:45:02 2026
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v2.4.2
+  GitCommit:        b7a25261e029d68978bbf290df0a62fc819b3c51
+ runc:
+  Version:          1.5.2
+  GitCommit:        v1.5.2-0-g29dd3dc2
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+== docker info (selected lines) ==
+ Server Version: 29.9.2
+ Operating System: Docker Desktop
+ CPUs: 16
+ Total Memory: 7.57GiB
+
+== Host ==
+Windows:   Microsoft Windows 11 Home Single Language, version 10.0.26300 (build 26300)
+Processor: 12th Gen Intel(R) Core(TM) i5-12500H, 12 cores, 16 threads
+RAM:       16781869056 bytes (15.63 GiB)
+
+== Python environment (.venv in repo root) ==
+Python:       3.11.1
+scikit-learn: 1.9.1
+xgboost:      3.2.0
+tensorflow:   2.21.0
+keras:        3.15.1
+numpy:        2.4.6
+
+
+Note: earlier project notes (PROGRESS.md, REPORT.md) record Python 3.11.9 for the host; the .venv used for verify.py reports 3.11.1. Both are Python 3.11; library versions above are unchanged.
